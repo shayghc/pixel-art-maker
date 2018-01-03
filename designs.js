@@ -1,5 +1,4 @@
 // Select color input
-
 // call this function when selecting pixels in the grid
 
 function getColour() {
@@ -32,12 +31,9 @@ function makeGrid(heightVal, widthVal) {
     grid.style.height = "(960/heightVal)";
 };
 
-
 // Select size input
 
 const gridSource = document.getElementById('sizePicker');
-
-
 
 gridSource.addEventListener('submit', function() {
 	// capture values of the dimensions from the form on submit
@@ -50,5 +46,3 @@ gridSource.addEventListener('submit', function() {
 	
 	makeGrid(heightVal, widthVal); // When size is submitted by the user, call makeGrid()
 });
-
-
